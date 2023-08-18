@@ -33,7 +33,7 @@
             @foreach($channels as $channel)
                 <tr>
                     <th scope="row">{{$channel->id}}</th>
-                    <td>{{$channel->ChanelName}}</td>
+                    <td>{{$channel->ChannelName}}</td>
                     <td>{{$channel->Description}}</td>
                     <td>{{$channel->SubscribersCount}}</td>
                     <td>{{$channel->URL}}</td>

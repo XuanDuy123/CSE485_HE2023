@@ -12,9 +12,9 @@
 <body>
     <div class="mx-auto my-3" style="max-width: 980px;">
         <div class="nav d-flex justify-content-between">
-            <h4 class="text-primary">list of employees</h4>
+            <h4 class="text-primary">list of channel</h4>
             <a href="<?php echo e(route('Channels.create')); ?>">
-                <button type="button" class="btn btn-success">+ ADD NEW EMPLOYEE</button>
+                <button type="button" class="btn btn-success">+ ADD NEW CHANNEL</button>
             </a>
 
         </div>
@@ -33,7 +33,7 @@
             <?php $__currentLoopData = $channels; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $channel): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <tr>
                     <th scope="row"><?php echo e($channel->id); ?></th>
-                    <td><?php echo e($channel->ChanelName); ?></td>
+                    <td><?php echo e($channel->ChannelName); ?></td>
                     <td><?php echo e($channel->Description); ?></td>
                     <td><?php echo e($channel->SubscribersCount); ?></td>
                     <td><?php echo e($channel->URL); ?></td>

@@ -36,7 +36,7 @@ class ChannelController extends Controller
      */
     public function store(Request $request)
     {
-       CHANNEL::fill($request->post())->save();
+        CHANNEL::created($request->post());
         return redirect()->route('Channels.index')->with('success','successfully.');
     }
 

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class CHANNEL extends Model
 {
-    protected $table= 'CHANNELS';
-    protected $fillable =['namechannel','description','url'];
+    protected $table='channels';
+    protected $fillable =['namechannel','description','subscriberscount','url'];
     use HasFactory;
 }

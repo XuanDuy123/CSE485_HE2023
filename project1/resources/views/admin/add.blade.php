@@ -15,9 +15,9 @@
             <h4 class="text-primary">Add new channel</h4>
             <form class="mx-auto" action="{{ route('Channels.store') }}" method="post" class="my-3" style="max-width: 28rem; width: 100%">
                 @csrf
-                <input type="text" class="form-control my-3" placeholder="Enter name" name="name"/>
-                <input type="text" class="form-control my-3" placeholder="Enter description" name="address"/>
-                <input type="number" class="form-control my-3" placeholder="Enter URL" name="salary"/>
+                <input type="text" class="form-control my-3" placeholder="Enter name" name="channelname"/>
+                <input type="text" class="form-control my-3" placeholder="Enter description" name="description"/>
+                <input type="text" class="form-control my-3" placeholder="Enter URL" name="url"/>
 
 
                 <div class="text-center mt-3">
